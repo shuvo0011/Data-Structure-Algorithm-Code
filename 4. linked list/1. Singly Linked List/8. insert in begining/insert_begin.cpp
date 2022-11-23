@@ -49,7 +49,17 @@ void insert(){
 }
 
 void insert_beg(){
-
-
-
+    int n;
+    cout<<"Enter value"<<endl;
+    cin>>n;
+    struct node *ptr =(struct node *) malloc(sizeof(struct node));
+    ptr->data=n;
+    ptr->next=NULL;
+    if(head==NULL){
+        head=ptr;
+    }else{
+        struct node *temp = ptr;
+        ptr->next = head;
+        head=ptr;
+    }
 }
