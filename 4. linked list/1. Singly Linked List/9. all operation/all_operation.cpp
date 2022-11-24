@@ -137,7 +137,6 @@ void del_last(){
         head = ptr->next;
         free(ptr);
     }
-
 }
 
 
